@@ -1,5 +1,8 @@
 # Full-Stack Starter
 
+# Team Members:
+  Jian Xie
+  
 This repository contains a "starter" project for web application development in JavaScript.
 
 ## One-time Setup
