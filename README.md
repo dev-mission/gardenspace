@@ -1,4 +1,4 @@
-# Full-Stack Starter
+# GardenSpace
 
 # Team Members:
   Jian Xie
