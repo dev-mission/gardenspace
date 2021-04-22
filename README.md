@@ -2,7 +2,6 @@
 
 # Team Members:
   Jian Xie
-  Yosabet Kassie
   
 This repository contains a "starter" project for web application development in JavaScript.
 
