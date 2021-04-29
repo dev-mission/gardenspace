@@ -1,0 +1,3 @@
+sequelize model:generate --name Plant --attributes GardenId:integer,name:string,description:text,color:string,species:string,location:string,type:string,season:string,nativeTo:string
+sequelize model:generate --name GardenPlant --attributes GardenId:integer,PlantId:integer
+sequelize model:generate --name Garden --attributes UserId:integer,name:string,email:string,phoneNumber:integer,hourOpenings:jsonb,location:string,lat:integer,long:integer,createdAt:date,updatedAt:date
