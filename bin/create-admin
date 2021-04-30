@@ -2,19 +2,18 @@
 
 'use strict';
 
-if (process.argv.length != 6) {
-  console.log("Usage: bin/create-admin First Last email@address.com password");
+if (process.argv.length != 5) {
+  console.log("Usage: bin/create-admin Name email@address.com password");
   return;
 }
 
 const bcrypt = require('bcrypt');
 const models = require('../models');
 
-bcrypt.hash(process.argv[5], 10).then(hashedPassword => {
+bcrypt.hash(process.argv[4], 10).then(hashedPassword => {
   models.User.create({
-    firstName: process.argv[2],
-    lastName: process.argv[3],
-    email: process.argv[4],
+    name: process.argv[2],
+    email: process.argv[3],
     hashedPassword: hashedPassword,
     isAdmin: true
   }).then(user => {

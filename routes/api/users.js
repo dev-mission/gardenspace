@@ -44,8 +44,7 @@ router.patch('/:id', interceptors.requireAdmin, function(req, res, next) {
       return helpers.handleUpload(user, "iconUrl", req.body.iconUrl, 'users/icon');
     }).then(function(user) {
       return user.update({
-        firstName: req.body.firstName,
-        lastName: req.body.lastName,
+        name: req.body.name,
         email: req.body.email,
         iconUrl: user.iconUrl
       }, {transaction});
