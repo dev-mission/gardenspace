@@ -11,8 +11,7 @@ function Register() {
   const history = useHistory();
 
   const [user, setUser] = useState({
-    firstName: '',
-    lastName: '',
+    name: '',
     email: '',
     password: ''
   });
@@ -51,14 +50,9 @@ function Register() {
                   <div className="alert alert-danger">{error.message}</div>
                 )}
                 <div className="mb-3">
-                  <label className="form-label" htmlFor="firstName">First name</label>
-                  <input type="text" class={classNames('form-control', {'is-invalid': error?.errorsFor?.('firstName')})} id="firstName" name="firstName" onChange={onChange} value={user.firstName} />
-                  {error?.errorMessagesHTMLFor?.('firstName')}
-                </div>
-                <div className="mb-3">
-                  <label className="form-label" htmlFor="lastName">Last name</label>
-                  <input type="text" class={classNames('form-control', {'is-invalid': error?.errorsFor?.('lastName')})} id="lastName" name="lastName" onChange={onChange} value={user.lastName} />
-                  {error?.errorMessagesHTMLFor?.('lastName')}
+                  <label className="form-label" htmlFor="name">Name</label>
+                  <input type="text" class={classNames('form-control', {'is-invalid': error?.errorsFor?.('name')})} id="name" name="name" onChange={onChange} value={user.name} />
+                  {error?.errorMessagesHTMLFor?.('name')}
                 </div>
                 <div className="mb-3">
                   <label className="form-label" htmlFor="email">Email</label>

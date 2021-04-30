@@ -57,7 +57,7 @@ This repository contains a "starter" project for web application development in 
    Once you're logged in, you will be in a new shell for the container where you can run the following command:
    
    ```
-   bin/create-admin Firstname Lastname email password
+   bin/create-admin Name email password
    ```
    
    Put in your name and email address and a password. This will create a first user in the database.
@@ -131,7 +131,7 @@ This repository contains a "starter" project for web application development in 
 5. Once linked, you can execute Heroku CLI commands. For example, to run the user creation script on the server:
 
    ```
-   heroku run bin/create-admin Firstname Lastname email password
+   heroku run bin/create-admin Name email password
    ```
 
 ## Shell Command Quick Reference
