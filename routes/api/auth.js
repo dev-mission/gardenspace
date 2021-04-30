@@ -36,8 +36,7 @@ router.get('/logout', function(req, res){
 if (process.env.REACT_APP_FEATURE_REGISTRATION === 'true') {
   router.post('/register', async function(req, res) {
     const user = models.User.build({
-      firstName: req.body.firstName,
-      lastName: req.body.lastName,
+      name: req.body.name,
       email: req.body.email,
     });
     user.password = req.body.password;
