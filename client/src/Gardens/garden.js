@@ -8,7 +8,7 @@ const Garden = () => {
     return(
         <Switch>
             <Route exact path={path}>
-                <GardenForm />
+                <GardenList />
             </Route>
 
             <Route path={`${path}/new`}>

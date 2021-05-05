@@ -36,11 +36,11 @@ function GardenForm(){
             if(id){
                 await Api.gardens.update(id, garden)
             }else{
-                await Api.garden.create(garden)
+                await Api.gardens.create(garden)
             }
             history.push('/garden')
         }catch(error){
-            console.log(erro)
+            console.log(error)
         }
     }
 

@@ -46,7 +46,7 @@ const Api = {
     create(data){
       return instance.post('/api/gardens', data)
     },
-    get(){
+    get(id){
       return instance.get(`api/gardens/${id}`)
     },
     update(id, data){
