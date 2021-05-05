@@ -12,6 +12,7 @@ import Home from './Home';
 import Login from './Login';
 import Passwords from './Passwords';
 import Register from './Register';
+import Profile from './Profiles/profile';
 
 function App() {
   return (
@@ -33,6 +34,9 @@ function App() {
               <Register />
             </Route>
           )}
+            <Route path="/profile">
+              <Profile />
+            </Route>
         </Switch>
       </Router>
     </AuthContextProvider>
