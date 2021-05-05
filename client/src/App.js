@@ -12,6 +12,9 @@ import Home from './Home';
 import Login from './Login';
 import Passwords from './Passwords';
 import Register from './Register';
+import Plants from './Plants/Plants';
+import GardenPlants from './GardenPlants/GardenPlants';
+
 
 function App() {
   return (
@@ -33,6 +36,12 @@ function App() {
               <Register />
             </Route>
           )}
+          <Route path="/plants">
+              <Plants />
+            </Route>
+            <Route path="/gardenplants">
+              <GardenPlants />
+            </Route>
         </Switch>
       </Router>
     </AuthContextProvider>
