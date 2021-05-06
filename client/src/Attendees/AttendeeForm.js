@@ -7,8 +7,9 @@ function AttendeeForm() {
   const history = useHistory();
   const [attendee, setAttendee] = useState({
     name: '',
-    slug: '',
-    position: 0
+    email: '',
+    phoneNumber: '',
+    date: ''
   });
 
   //useEffect: Loads the function after 
@@ -52,7 +53,7 @@ function AttendeeForm() {
         </div>
         <div className="mb-3">
           <label className="form-label">Email</label>
-          <input className="form-control" type="text" name="slug" value={attendee.email} onChange={onChange} />
+          <input className="form-control" type="text" name="email" value={attendee.email} onChange={onChange} />
         </div>
         <div className="mb-3">
           <label className="form-label">Phone Number</label>
@@ -61,10 +62,6 @@ function AttendeeForm() {
         <div className="mb-3">
           <label className="form-label">Date</label>
           <input className="form-control" type="text" name="date" value={attendee.date} onChange={onChange} />
-        </div>
-        <div className="mb-3">
-          <label className="form-label">Hour</label>
-          <input className="form-control" type="text" name="hour" value={attendee.hour} onChange={onChange} />
         </div>
         <button className="btn btn-primary" type="submit">Submit</button>
       </form>
