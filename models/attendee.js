@@ -19,7 +19,6 @@ module.exports = (sequelize, DataTypes) => {
     email: DataTypes.STRING,
     phoneNumber: DataTypes.STRING,
     date: DataTypes.DATE,
-    hour: DataTypes.DATEONLY
   }, {
     sequelize,
     modelName: 'Attendee',
