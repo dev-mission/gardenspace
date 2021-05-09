@@ -11,7 +11,7 @@ router.get('/', async function(req, res){
 })
 
 router.post('/', async function(req, res){
-    const row = models.Profile.build(req,body)
+    const row = models.Profile.build(req.body)
 
     try{
         await row.save();

@@ -32,7 +32,7 @@ function ProfileList(){
             <ul>
                 {profile.map(p => (
                     <li>
-                        <p><Link to={`/profile/${p.id}/edit`}>{p.name}, {p.slug}, {p.position}</Link></p>
+                        <p><Link to={`/profile/${p.id}/edit`}>{p.name}, {p.location}, {p.description}, {p.hour}, {p.phoneNumber}, {p.date}</Link></p>
                         <p><button onClick={()=> onDelete(p)} type="button" className="btn btn-sm btn-danger">Delete</button></p>
                     </li>   
                 ))}

@@ -42,10 +42,10 @@ const Api = {
   },
   profiles: {
     index(){
-      return instance.get('api/profiles')
+      return instance.get('/api/profiles')
     },
     create(data){
-      return instance.post('api/profiles', data)
+      return instance.post('/api/profiles', data)
     },
     get(id){
       return instance.get(`/api/profiles/${id}`)
@@ -57,7 +57,7 @@ const Api = {
       return instance.delete(`/api/profiles/${id}`)
     }
   },
-  
+
   attendees: {
     index(){
       return instance.get('/api/attendees')
