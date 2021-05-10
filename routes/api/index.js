@@ -9,5 +9,7 @@ router.use('/gardens', require('./gardens'));
 router.use('/attendees', require('./attendees'))
 router.use('/uploads', require('./uploads'));
 router.use('/users', require('./users'));
+router.use('/plants', require('./plants'));
+router.use('/gardenplants', require('./gardenplants'));
 
 module.exports = router;
