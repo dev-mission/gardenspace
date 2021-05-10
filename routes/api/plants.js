@@ -10,7 +10,7 @@ const router = express.Router();
 
 router.get('/', async function(req, res) {
   const plants = await models.Plant.findAll({
-    order: [['position', 'ASC'], ['name', 'ASC']]
+    order: [['name', 'ASC']]
   });
   res.json(plants);
 });

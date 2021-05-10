@@ -14,7 +14,6 @@ module.exports = (sequelize, DataTypes) => {
     }
   };
   Plant.init({
-    GardenId: DataTypes.INTEGER,
     name: DataTypes.STRING,
     description: DataTypes.TEXT,
     color: DataTypes.STRING,
