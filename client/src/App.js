@@ -12,7 +12,8 @@ import Home from './Home';
 import Login from './Login';
 import Passwords from './Passwords';
 import Register from './Register';
-import Attendees from './Attendees/attendee';
+import Gardens from './Gardens/Gardens';
+import Attendees from './Attendees/Attendees';
 
 function App() {
   return (
@@ -34,9 +35,12 @@ function App() {
               <Register />
             </Route>
           )}
-            <Route path="/attendee">
-              <Attendees />
-            </Route>
+          <Route path="/gardens">
+            <Gardens />
+          </Route>
+          <Route path="/attendees">
+            <Attendees />
+          </Route>
         </Switch>
       </Router>
     </AuthContextProvider>

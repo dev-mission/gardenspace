@@ -39,6 +39,23 @@ const Api = {
       return instance.patch(`/api/passwords/${token}`, {password});
     }
   },
+  gardens: {
+    index(){
+      return instance.get('/api/gardens')
+    },
+    create(data){
+      return instance.post('/api/gardens', data)
+    },
+    get(id){
+      return instance.get(`/api/gardens/${id}`)
+    },
+    update(id, data){
+      return instance.get(`/api/gardens/${id}`, data)
+    },
+    delete(id){
+      return instance.delete(`/api/gardens/${id}`)
+    },
+  },
   attendees: {
     index(){
       return instance.get('/api/attendees')
