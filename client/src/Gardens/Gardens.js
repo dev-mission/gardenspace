@@ -22,4 +22,4 @@ const Garden = () => {
     )
 }
 
-export default Garden
+export default Garden;
