@@ -13,6 +13,7 @@ import Login from './Login';
 import Passwords from './Passwords';
 import Register from './Register';
 import Garden from './Gardens/garden';
+import Attendees from './Attendees/attendee';
 
 function App() {
   return (
@@ -36,6 +37,9 @@ function App() {
           )}
           <Route path="/garden">
             <Garden/>
+          </Route>
+          <Route path="/attendee">
+            <Attendees />
           </Route>
         </Switch>
       </Router>
