@@ -47,13 +47,13 @@ const Api = {
       return instance.post('/api/gardens', data)
     },
     get(id){
-      return instance.get(`api/gardens/${id}`)
+      return instance.get(`/api/gardens/${id}`)
     },
     update(id, data){
-      return instance.get(`api/gardens/${id}`, data)
+      return instance.get(`/api/gardens/${id}`, data)
     },
     delete(id){
-      return instance.delete(`api/gardens/${id}`)
+      return instance.delete(`/api/gardens/${id}`)
     },
   },
   attendees: {

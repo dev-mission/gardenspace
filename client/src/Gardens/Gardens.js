@@ -1,6 +1,6 @@
 import {Route, Switch, useRouteMatch} from 'react-router-dom';
-import GardenList from "./gardenlist"
-import GardenForm from "./gardenform"
+import GardensList from "./GardensList"
+import GardenForm from "./GardenForm"
 
 const Garden = () => {
     const {path} = useRouteMatch();
@@ -8,7 +8,7 @@ const Garden = () => {
     return(
         <Switch>
             <Route exact path={path}>
-                <GardenList />
+                <GardensList />
             </Route>
 
             <Route path={`${path}/new`}>

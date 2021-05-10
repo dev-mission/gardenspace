@@ -13,16 +13,16 @@ function GardenForm(){
         location: '',
         lat: 0,
         long: 0,
-    })
+    });
 
 
     useEffect(()=>{
         if(id){
-            Api.garden.get(id).then((response)=>{
+            Api.gardens.get(id).then((response)=>{
                 setGarden(response.data)
             })
         }
-    }, [])
+    }, [id]);
 
     const onChange = (event) => {
         const newGarden = {...garden};
@@ -38,7 +38,7 @@ function GardenForm(){
             }else{
                 await Api.gardens.create(garden)
             }
-            history.push('/garden')
+            history.push('/gardens')
         }catch(error){
             console.log(error)
         }

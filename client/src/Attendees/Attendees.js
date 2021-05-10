@@ -1,6 +1,6 @@
 import { Route, Switch, useRouteMatch } from "react-router-dom";
 
-import AttendeeList from "./AttendeeList";
+import AttendeesList from "./AttendeesList";
 import AttendeeForm from './AttendeeForm';
 
 const Attendee = () => {
@@ -12,7 +12,7 @@ const Attendee = () => {
                 Main URL Path to AttendeeList file
             */}
             <Route exact path={path}>
-                <AttendeeList />
+                <AttendeesList />
             </Route>
             {/*
                 Main URL Path to new AttendeeList file
