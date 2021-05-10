@@ -25,7 +25,7 @@ function GardenPlantsList(){
             <ul>
               {gardenplants.map(s =>(
                   <li>
-                    <p><Link to={`/gardenplants/${s.id}/edit`}>{s.GardenId},{s.PlantId}</Link></p>
+                    <p><Link to={`/gardenplants/${s.id}/edit`}>{s.Garden.name} has {s.Plant.name}</Link></p>
                     <p><button onClick={() => onDelete(s)} type="button" className="btn btn-sm btn-danger">Delete</button></p>
                   </li>
               ))}

@@ -10,7 +10,8 @@ const router = express.Router();
 
 router.get('/', async function(req, res) {
   const gardenplants = await models.GardenPlant.findAll({
-    order: [['position', 'ASC'], ['name', 'ASC']]
+    order: [['GardenId', 'ASC'], ['PlantId', 'ASC']],
+    include: [models.Garden, models.Plant]
   });
   res.json(gardenplants);
 });
