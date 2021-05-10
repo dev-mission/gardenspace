@@ -14,7 +14,8 @@ import Passwords from './Passwords';
 import Register from './Register';
 import Plants from './Plants/Plants';
 import GardenPlants from './GardenPlants/GardenPlants';
-
+import Gardens from './Gardens/Gardens';
+import Attendees from './Attendees/Attendees';
 
 function App() {
   return (
@@ -37,11 +38,17 @@ function App() {
             </Route>
           )}
           <Route path="/plants">
-              <Plants />
-            </Route>
-            <Route path="/gardenplants">
-              <GardenPlants />
-            </Route>
+            <Plants />
+          </Route>
+          <Route path="/gardenplants">
+            <GardenPlants />
+          </Route>
+          <Route path="/gardens">
+            <Gardens />
+          </Route>
+          <Route path="/attendees">
+            <Attendees />
+          </Route>
         </Switch>
       </Router>
     </AuthContextProvider>
