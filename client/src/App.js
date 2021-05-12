@@ -14,6 +14,10 @@ import Passwords from './Passwords';
 import Register from './Register';
 import Profile from './Profiles/profile';
 import Attendees from './Attendees/attendee';
+import Plants from './Plants/Plants';
+import GardenPlants from './GardenPlants/GardenPlants';
+import Gardens from './Gardens/Gardens';
+import Attendees from './Attendees/Attendees';
 
 function App() {
   return (
@@ -41,6 +45,18 @@ function App() {
             <Route path="/attendee">
               <Attendees />
             </Route>
+          <Route path="/plants">
+            <Plants />
+          </Route>
+          <Route path="/gardenplants">
+            <GardenPlants />
+          </Route>
+          <Route path="/gardens">
+            <Gardens />
+          </Route>
+          <Route path="/attendees">
+            <Attendees />
+          </Route>
         </Switch>
       </Router>
     </AuthContextProvider>

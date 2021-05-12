@@ -57,7 +57,57 @@ const Api = {
       return instance.delete(`/api/profiles/${id}`)
     }
   },
-
+  plants: {
+    index() {
+      return instance.get('/api/plants');
+    },
+    create(data) {
+      return instance.post('/api/plants', data);
+    },
+    get(id) {
+      return instance.get(`/api/plants/${id}`);
+    },
+    update(id, data) {
+      return instance.patch(`/api/plants/${id}`, data);
+    },
+    delete(id) {
+      return instance.delete(`/api/plants/${id}`);
+    }
+  },
+  gardenplants: {
+    index() {
+      return instance.get('/api/gardenplants');
+    },
+    create(data) {
+      return instance.post('/api/gardenplants', data);
+    },
+    get(id) {
+      return instance.get(`/api/gardenplants/${id}`);
+    },
+    update(id, data) {
+      return instance.patch(`/api/gardenplants/${id}`, data);
+    },
+    delete(id) {
+      return instance.delete(`/api/gardenplants/${id}`);
+    }
+  },
+  gardens: {
+    index(){
+      return instance.get('/api/gardens')
+    },
+    create(data){
+      return instance.post('/api/gardens', data)
+    },
+    get(id){
+      return instance.get(`/api/gardens/${id}`)
+    },
+    update(id, data){
+      return instance.get(`/api/gardens/${id}`, data)
+    },
+    delete(id){
+      return instance.delete(`/api/gardens/${id}`)
+    },
+  },
   attendees: {
     index(){
       return instance.get('/api/attendees')

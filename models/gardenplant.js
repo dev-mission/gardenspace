@@ -11,11 +11,16 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      GardenPlant.belongsTo(models.Garden);
+      GardenPlant.belongsTo(models.Plant);
     }
   };
   GardenPlant.init({
-    GardenId: DataTypes.INTEGER,
-    PlantId: DataTypes.INTEGER
+    id: {
+      type: DataTypes.INTEGER,
+      primaryKey: true,
+      autoIncrement: true
+    }
   }, {
     sequelize,
     modelName: 'GardenPlant',
