@@ -1,11 +1,13 @@
 import Gardenimg from "./gardenimg.jpg";
+import './Home.scss';
 
 function Home() {
   return (
     <div className="container">
-      <div>
+      <div className="col-md-6">
         <img className="" src={Gardenimg} alt="garden image"/>
       </div>
+    <div className="col-md-6">
     <div className="">
       <input className="" placeholder="Find a community garden near you" type="input"/>
       <input type="submit"/>
@@ -46,6 +48,7 @@ function Home() {
         </div>
       </div>
     </div>
+  </div>
   </div>  
   );
 }

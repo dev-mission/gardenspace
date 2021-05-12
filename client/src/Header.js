@@ -32,7 +32,7 @@ function Header() {
     <nav className="navbar navbar-expand-md navbar-light bg-light fixed-top">
       <div className="container">
         <div id="logo">
-          <img className="" src={Logo} alt="Logo"/>
+          <img className="Logo" src={Logo} alt="Logo"/>
         </div>
         <Link className="navbar-brand" to="/">GardenSpace</Link>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
