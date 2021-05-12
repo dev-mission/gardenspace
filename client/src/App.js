@@ -49,6 +49,12 @@ function App() {
           <Route path="/attendees">
             <Attendees />
           </Route>
+            <Route path="/profile">
+              <Profile />
+            </Route>
+            <Route path="/attendee">
+              <Attendees />
+            </Route>
         </Switch>
       </Router>
     </AuthContextProvider>

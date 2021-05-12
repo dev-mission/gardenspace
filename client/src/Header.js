@@ -29,10 +29,11 @@ function Header() {
   return (
     <nav className="navbar navbar-expand-md navbar-light bg-light fixed-top">
       <div className="container">
-        <Link className="navbar-brand" to="/">My App</Link>
+        {/*<Link className="navbar-brand" to="/">My App</Link>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
-        </button>    
+  </button>*/}
+        <Link className="navbar-brand" id="title" to="/">Garden Space</Link>
         <div className="collapse navbar-collapse" id="navbarsExampleDefault">
           <ul className="navbar-nav flex-grow-1 mb-2 mb-md-0">
             <li className="nav-item active">
