@@ -19,6 +19,7 @@ function Plants(){
             <PlantForm />
            </Route>
        </Switch>
+
     );
 }
 export default Plants;
