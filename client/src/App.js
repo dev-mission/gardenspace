@@ -9,6 +9,8 @@ import './App.scss';
 import {AuthContextProvider} from './AuthContext';
 import Header from './Header';
 import Home from './Home';
+import WhatAreCommunityGarden from './Whatarecommgar';
+import Getinvolved from './Getinvolved';
 import Login from './Login';
 import Passwords from './Passwords';
 import Register from './Register';
@@ -21,6 +23,12 @@ function App() {
         <Switch>
           <Route exact path="/">
             <Home />
+          </Route>
+          <Route path="/wacg">
+            <WhatAreCommunityGarden />
+          </Route>
+          <Route path="/getinvolved">
+            <Getinvolved />
           </Route>
           <Route path="/login">
             <Login />

@@ -32,7 +32,7 @@ function Header() {
     <nav className="navbar navbar-expand-md navbar-light bg-light fixed-top">
       <div className="container">
         <a class="navbar-brand" href="Home.js">
-          <img src={Logo} alt="Logo" width="38.95" height="50.53" class="d-inline-block align-text-top" />
+          <img src={Logo} alt="Logo" width="50.53" height="50.53" class="d-inline-block align-text-top" />
         </a>
         <Link className="navbar-brand" to="Home.js" id="HeaderTitle">GardenSpace</Link>
           <div className="collapse navbar-collapse" id="navbarsExampleDefault">
@@ -42,13 +42,13 @@ function Header() {
                   <Link className="nav-link" aria-current="page" to="/">Garden Locator</Link>
                 </li>
                 <li class="nav-item">
-                <Link className="nav-link" aria-current="page" to="/">What are community garden?</Link>
+                <Link className="nav-link" aria-current="page" to="/wacg">What are community garden?</Link>
                 </li>
                 <li class="nav-item">
                   <Link className="nav-link" aria-current="page" to="/">Plant Library</Link>
                 </li>
                 <li class="nav-item">
-                  <Link className="nav-link" aria-current="page" to="/">Get Involved</Link>
+                  <Link className="nav-link" aria-current="page" to="/getinvolved">Get Involved</Link>
                 </li>
               </ul>
             </div>

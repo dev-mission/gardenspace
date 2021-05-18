@@ -15,7 +15,7 @@ function Home() {
       </div>*/}
       <div class="input-group mb-3">
         <input type="text" class="form-control" placeholder="Find a community garden near you" />
-        <button class="btn btn btn-success" type="button" id="button-addon2">Button</button>
+        <button class="btn btn btn-success" type="button" id="button-addon2">Submit</button>
       </div>
     <div>
       <div className="container">

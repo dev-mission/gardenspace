@@ -1,0 +1,22 @@
+@import '~bootstrap/scss/bootstrap.scss';
+
+.body-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.getinvolvedcal{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.getinvolvedcal div{
+    text-align: center;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+#schedule-title{
+    text-align: center;
+}
