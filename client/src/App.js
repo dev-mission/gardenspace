@@ -11,6 +11,9 @@ import Header from './Header';
 import Home from './Home';
 import WhatAreCommunityGarden from './Whatarecommgar';
 import Getinvolved from './Getinvolved';
+import RegisterO from './RegisterO';
+import LoginO from './LoginO';
+import ProfileO from './ProfileO'
 import Login from './Login';
 import Passwords from './Passwords';
 import Register from './Register';
@@ -23,7 +26,7 @@ function App() {
   return (
     <AuthContextProvider>
       <Router>
-        <Header />
+        {/*<Header />*/}
         <Switch>
           <Route exact path="/">
             <Home />
@@ -39,6 +42,15 @@ function App() {
           </Route>
           <Route path="/passwords">
             <Passwords />
+          </Route>
+          <Route path="/registero">
+            <RegisterO />
+          </Route>
+          <Route path="/logino">
+            <LoginO/>
+          </Route>
+          <Route path="/profileo">
+            <ProfileO/>
           </Route>
           {process.env.REACT_APP_FEATURE_REGISTRATION === 'true' && (
             <Route path="/register">
@@ -58,7 +70,7 @@ function App() {
             <Attendees />
           </Route>
             <Route path="/profile">
-              <Profile />
+              {/*<Profile />*/}
             </Route>
             <Route path="/attendee">
               <Attendees />

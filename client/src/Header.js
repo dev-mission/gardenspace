@@ -28,6 +28,8 @@ function Header() {
     history.push('/');
   };
 
+
+
   return (
     <nav className="navbar navbar-expand-md navbar-light bg-light fixed-top">
       <div className="container">
@@ -72,7 +74,7 @@ function Header() {
             </div>
           </div>
           
-          <input type="button" class="btn btn-outline-dark" value="Owner Log In"/>
+          <input type="button" class="btn btn-outline-dark" value="Owner Log In" onClick="/login"/>
           <div id="space"></div>
           <input class="btn btn-success" type="button" value="Register My Garden"/>
           
