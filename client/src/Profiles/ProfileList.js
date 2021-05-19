@@ -28,11 +28,11 @@ function ProfileList(){
     return(
         <main className="container">
             <h1>Profile List</h1>
-            <Link className="btn btn-primary" to="/profile/new">New</Link>
+            <Link className="btn btn-primary" to="/profiles/new">New</Link>
             <ul>
                 {profile.map(p => (
                     <li>
-                        <p><Link to={`/profile/${p.id}/edit`}>{p.name}, {p.location}, {p.description}, {p.hour}, {p.phoneNumber}, {p.date}</Link></p>
+                        <p><Link to={`/profiles/${p.id}/edit`}>{p.name}, {p.location}, {p.description}, {p.hour}, {p.phoneNumber}, {p.date}</Link></p>
                         <p><button onClick={()=> onDelete(p)} type="button" className="btn btn-sm btn-danger">Delete</button></p>
                     </li>   
                 ))}

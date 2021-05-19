@@ -6,14 +6,13 @@ import {
 
 import './App.scss';
 
-import {AuthContextProvider} from './AuthContext';
+import { AuthContextProvider } from './AuthContext';
 import Header from './Header';
 import Home from './Home';
 import Login from './Login';
 import Passwords from './Passwords';
 import Register from './Register';
 import Profile from './Profiles/profile';
-import Attendees from './Attendees/attendee';
 import Plants from './Plants/Plants';
 import GardenPlants from './GardenPlants/GardenPlants';
 import Gardens from './Gardens/Gardens';
@@ -39,12 +38,9 @@ function App() {
               <Register />
             </Route>
           )}
-            <Route path="/profile">
-              <Profile />
-            </Route>
-            <Route path="/attendee">
-              <Attendees />
-            </Route>
+          <Route path="/profiles">
+            <Profile />
+          </Route>
           <Route path="/plants">
             <Plants />
           </Route>

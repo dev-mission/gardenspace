@@ -17,7 +17,7 @@ function ProfileForm(){
 
     useEffect(function(){
         if(id){
-            Api.profile.get(id).then((response)=>{
+            Api.profiles.get(id).then((response)=>{
                 setProfile(response.data)
             })
         }
@@ -38,7 +38,7 @@ function ProfileForm(){
             }else{
                 await Api.profiles.create(profile)
             }
-            history.push('/profile')
+            history.push('/profiles')
         }catch(error){
             console.log(error)
         }
