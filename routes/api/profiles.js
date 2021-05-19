@@ -1,26 +1,61 @@
-const express = require('express')
+'use strict';
 
+const express = require('express')
+const HttpStatus = require('http-status-codes');
+
+const interceptors = require('../interceptors');
 const router = express.Router()
 
 const models = require("../../models")
 
 router.get('/', async function(req, res){
-    const rows = await models.Profile.findAll()
-
-    res.json(rows)
+    const profiles = await models.Profile.findAll({
+        order: [['name', 'ASC']]
+    })
+    res.json(profiles)
 })
 
-router.post('/', async function(req, res){
-    const row = models.Profile.build(req.body)
+router.post('/', interceptors.requireLogin, async function(req, res) {
+    const profile = models.Profile.build(req.body);
+    try {
+      await profile.save();
+      res.status(HttpStatus.CREATED).json(profile);
+    } catch (error) {
+      res.status(HttpStatus.UNPROCESSABLE_ENTITY).json(error);
+    }
+});
 
-    try{
-        await row.save();
+router.get('/:id', async function(req, res) {
+    const profile = await models.Profile.findByPk(req.params.id);
+    if (profile) {
+      res.json(profile);
+    } else {
+      res.status(HttpStatus.NOT_FOUND).end();
+    }
+});
 
-        res.status(201).json(row)
-    }catch(error){
-        console.log(error)
-        res.status(422).json(error)
+router.patch('/:id', interceptors.requireLogin, async function(req, res) {
+    const profile = await models.Profile.findByPk(req.params.id);
+    if (profile) {
+      try {
+        await profile.update(req.body);
+        res.status(HttpStatus.OK).end();  
+      } catch (error) {
+        res.status(HttpStatus.UNPROCESSABLE_ENTITY).json(error);
+      }
+    } else {
+      res.status(HttpStatus.NOT_FOUND).end();
     }
 })
+
+router.delete('/:id', interceptors.requireLogin, async function(req, res) {
+    const profile = await models.Profile.findByPk(req.params.id);
+    if (profile) {
+      await profile.destroy();
+      res.status(HttpStatus.OK).end();
+    } else {
+      res.status(HttpStatus.NOT_FOUND).end();
+    }
+});
 
 module.exports = router
