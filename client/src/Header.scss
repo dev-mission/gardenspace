@@ -1,0 +1,28 @@
+@import '~bootstrap/scss/bootstrap.scss';
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+#logo img{
+    width: 38.95px;
+    height: 50.53px
+}
+
+#HeaderTitle{
+    color: #152536;
+    display: flex;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 48px;
+}
+
+#nav-item1{
+    background-color: #2A936D;
+}
+
+#nav-item1 .nav-link{
+    color:white;
+}
+#space{
+    margin: 8px;
+}
