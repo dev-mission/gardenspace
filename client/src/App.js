@@ -13,7 +13,10 @@ import WhatAreCommunityGarden from './Whatarecommgar';
 import Getinvolved from './Getinvolved';
 import RegisterO from './RegisterO';
 import LoginO from './LoginO';
+import ProfileEditO from './ProfileEditO'
 import ProfileO from './ProfileO'
+import PlantlibO from './PlantlibO'
+import PlantlibschO from './PlantlibschO'
 import Login from './Login';
 import Passwords from './Passwords';
 import Register from './Register';
@@ -49,8 +52,17 @@ function App() {
           <Route path="/logino">
             <LoginO/>
           </Route>
+          <Route path="/profileedito">
+            <ProfileEditO/>
+          </Route>
           <Route path="/profileo">
             <ProfileO/>
+          </Route>
+          <Route path="/plantlibo">
+            <PlantlibO/>
+          </Route>
+          <Route path="/plantlibscho">
+            <PlantlibschO/>
           </Route>
           {process.env.REACT_APP_FEATURE_REGISTRATION === 'true' && (
             <Route path="/register">
