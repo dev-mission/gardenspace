@@ -37,7 +37,7 @@ function AttendeeForm() {
       }else{
         await Api.attendees.create(attendee)
       }
-      history.push('/attendee');
+      history.push('/attendees');
     } catch (error) {
       console.log(error);
     }

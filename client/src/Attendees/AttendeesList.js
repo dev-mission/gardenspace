@@ -29,11 +29,11 @@ function AttendeeList() {
   return (
     <main className="container">
       <h1>Attendee List</h1>
-      <Link className="btn btn-primary" to="/attendee/new">New</Link>
+      <Link className="btn btn-primary" to="/attendees/new">New</Link>
       <ul>
         {attendee.map(a => (
           <li>
-            <p><Link to={`/attendee/${a.id}/edit`}>{a.name}, {a.email}, {a.phoneNumber}, {a.date}, {a.hour}</Link></p>
+            <p><Link to={`/attendees/${a.id}/edit`}>{a.name}, {a.email}, {a.phoneNumber}, {a.date}, {a.hour}</Link></p>
             <p><button onClick={()=> onDelete(a)} type="button" className="btn btn-sm btn-danger">Delete</button></p>
           </li>
         ))}
