@@ -40,13 +40,13 @@ function ProfileO(){
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                   <li class="nav-item" style={{backgroundColor: "#2A936D"}}>
-                    <Link className="nav-link" aria-current="page" to="/profilo" style={{color: "white"}}>Garden Profile</Link>
+                    <Link className="nav-link" aria-current="page" to="/ProfileO" style={{color: "white"}}>Garden Profile</Link>
                   </li>
                   <li class="nav-item">
-                  <Link className="nav-link" aria-current="page" to="/">Plant Library</Link>
+                  <Link className="nav-link" aria-current="page" to="/PlantlibO">Plant Library</Link>
                   </li>
                   <li class="nav-item">
-                    <Link className="nav-link" aria-current="page" to="/">Schedule</Link>
+                    <Link className="nav-link" aria-current="page" to="/PlantlibschO">Schedule</Link>
                   </li>
                 </ul>
               </div>
@@ -57,14 +57,13 @@ function ProfileO(){
 
             <div className="col-md-5">
               <h1>Garden Profile</h1>
-              <img src="" alt=""/>
             </div>
             <div className="col-md-7">
               <p>Garden Name</p>
               <p>Address</p>
               <p>Description</p>
               <p>Hours</p>
-              <p>Phone</p>           
+              <p>Phone</p>
               <p>Email</p>
             </div>
         </div>

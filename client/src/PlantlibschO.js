@@ -5,6 +5,7 @@ import Api from './Api';
 import {useAuthContext} from './AuthContext';
 import Logo from "./Logo.jpg";
 import './Header.scss';
+import './PlantlibschO.scss';
 
 function PlantlibschO(){
 
@@ -41,13 +42,13 @@ function PlantlibschO(){
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <Link className="nav-link" aria-current="page" to="/profilo">Garden Profile</Link>
+                    <Link className="nav-link" aria-current="page" to="/ProfileO">Garden Profile</Link>
                   </li>
                   <li class="nav-item">
-                  <Link className="nav-link" aria-current="page" to="/">Plant Library</Link>
+                  <Link className="nav-link" aria-current="page" to="/PlantlibO">Plant Library</Link>
                   </li>
                   <li class="nav-item" style={{backgroundColor: "#2A936D"}}>
-                    <Link className="nav-link" aria-current="page" to="/" style={{color: "white"}}>Schedule</Link>
+                    <Link className="nav-link" aria-current="page" to="/PlantlibschO" style={{color: "white"}}>Schedule</Link>
                   </li>
                 </ul>
               </div>
@@ -57,6 +58,9 @@ function PlantlibschO(){
             </nav>
             <div class="container" id="calendar">
                 <div className="col-md-12">
+                    <div className="" id="addPlant">
+                        <button class="btn btn btn-success" type="button" id="button-addon2">Add new plants</button>
+                    </div>
                     <h1 id="schedule-title">Schedule</h1>
                     <div class="container getinvolvedcal">
                         <div className="col-md-2.5">
@@ -102,7 +106,7 @@ function PlantlibschO(){
             <div class="card mb-3">
                 <div class="row g-0">
                     <div class="col-md-4">
-                        <img src="" alt=""/>
+                        <div id="imgdiv"></div>
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
@@ -118,7 +122,7 @@ function PlantlibschO(){
             <div class="card mb-3">
                 <div class="row g-0">
                     <div class="col-md-4">
-                        <img src="" alt=""/>
+                        <div id="imgdiv"></div>
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
@@ -133,7 +137,7 @@ function PlantlibschO(){
             <div class="card mb-3">
                 <div class="row g-0">
                     <div class="col-md-4">
-                        <img src="" alt=""/>
+                        <div id="imgdiv"></div>
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">

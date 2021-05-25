@@ -5,6 +5,7 @@ import Api from './Api';
 import {useAuthContext} from './AuthContext';
 import Logo from "./Logo.jpg";
 import './Header.scss';
+import './LoginO.scss';
 
 function LoginO(){
     const history = useHistory();
@@ -29,7 +30,7 @@ function LoginO(){
       };
 
     return(
-        <div className="container">
+        <div className="container" id="body-container">
             <nav className="navbar navbar-expand-md navbar-light bg-light fixed-top">
             <div className="container">
                 <a class="navbar-brand" href="Home.js">
@@ -60,14 +61,16 @@ function LoginO(){
             </div>
             </nav>
 
-            <h1>Owner Log in</h1>
-            <input type="text" class="form-control" placeholder="Email or Phone Number"/>
-            <input type="text" class="form-control" placeholder="Password"/>
-            <button class="btn btn btn-success" type="button" id="button-addon2">Log in</button>
-            <p>
-                Not Registered?
-                <Link to="/registero">Register My Garden</Link>
-            </p>
+            <div className="container" id="logino">
+              <h3>Owner Log in</h3>
+              <input type="text" class="form-control" placeholder="Email or Phone Number"/>
+              <input type="text" class="form-control" placeholder="Password"/>
+              <button class="btn btn btn-success" type="button" id="button-addon2">Log in</button>
+              <p>
+                  Not Registered?
+                  <Link to="/registero">Register My Garden</Link>
+              </p>
+            </div>
         </div>
     )
 }

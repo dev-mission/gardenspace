@@ -1,0 +1,13 @@
+@import '~bootstrap/scss/bootstrap.scss';
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+#addPlant{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#imgdiv{
+    height: 300px;
+    width: 400px;
+    background-color: #C4C4C4;
+}

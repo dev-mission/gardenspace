@@ -5,6 +5,7 @@ import Api from './Api';
 import {useAuthContext} from './AuthContext';
 import Logo from "./Logo.jpg";
 import './Header.scss';
+import './PlantlibO.scss';
 
 function PlantlibO(){
 
@@ -41,44 +42,59 @@ function PlantlibO(){
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <Link className="nav-link" aria-current="page" to="/profilo">Garden Profile</Link>
+                    <Link className="nav-link" aria-current="page" to="/ProfileO">Garden Profile</Link>
                   </li>
                   <li class="nav-item" style={{backgroundColor: "#2A936D"}}>
-                  <Link className="nav-link" aria-current="page" to="/" style={{color: "white"}}>Plant Library</Link>
+                  <Link className="nav-link" aria-current="page" to="/PlantlibO" style={{color: "white"}}>Plant Library</Link>
                   </li>
                   <li class="nav-item">
-                    <Link className="nav-link" aria-current="page" to="/">Plant Library</Link>
+                    <Link className="nav-link" aria-current="page" to="/PlantlibschO">Schedule</Link>
                   </li>
                 </ul>
               </div>
             </div>
             <input type="button" class="btn btn-outline-dark" value="Log Out" onClick="/login"/>
             </div>
-            </nav>
+        </nav>
             <div class="container" id="calendar">
                 <div className="col-md-12">
                     <h1 id="schedule-title">Plant Library</h1>
-                    <button class="btn btn btn-success" type="button" id="button-addon2">Add new plants</button>
-                    <input type="text" class="form-control" placeholder="Search for plants"/>
-                    <button class="btn btn btn-success" type="button" id="button-addon2">Search</button>
-                    
+                    <div className="" id="addPlant">
+                        <button class="btn btn btn-success" type="button" id="button-addon2">Add new plants</button>
+                    </div>
+                    <div className="col-md-6 gardenInput">
+                        <input type="text" class="form-control" placeholder="Search for plants"/>
+                        <button class="btn btn btn-success" type="button">Search</button>
+                    </div>
+                    <div className="col-md-3">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Garden</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                        </select>
+                    </div>
                     <div class="container">
                         <div class="card" className="col-md-4" style={{width: "100px;"}}>
-                            <img src="..." class="card-img-top" alt="..." />
+                            <div id="imgdiv"></div>
+                            <div class="card-body">
+                                <h1>Card-Title</h1>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                            <div class="card-body">
+                                <div>Location</div>
+
+                            </div>
+                        </div>
+                        <div class="card" className="col-md-4" style={{width: "100px;"}}>
+                            <div id="imgdiv"></div>
                             <div class="card-body">
                                 <h1>Card-Title</h1>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             </div>
                         </div>
                         <div class="card" className="col-md-4" style={{width: "100px;"}}>
-                            <img src="..." class="card-img-top" alt="..." />
-                            <div class="card-body">
-                                <h1>Card-Title</h1>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            </div>
-                        </div>
-                        <div class="card" className="col-md-4" style={{width: "100px;"}}>
-                            <img src="..." class="card-img-top" alt="..." />
+                            <div id="imgdiv"></div>
                             <div class="card-body">
                                 <h1>Card-Title</h1>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -88,21 +104,21 @@ function PlantlibO(){
                     </div>
                     <div class="container">
                         <div class="card" className="col-md-4" style={{width: "100px;"}}>
-                            <img src="..." class="card-img-top" alt="..." />
+                            <div id="imgdiv"></div>
                             <div class="card-body">
                                 <h1>Card-Title</h1>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             </div>
                         </div>
                         <div class="card" className="col-md-4" style={{width: "100px;"}}>
-                            <img src="..." class="card-img-top" alt="..." />
+                            <div id="imgdiv"></div>
                             <div class="card-body">
                                 <h1>Card-Title</h1>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             </div>
                         </div>
                         <div class="card" className="col-md-4" style={{width: "100px;"}}>
-                            <img src="..." class="card-img-top" alt="..." />
+                            <div id="imgdiv"></div>
                             <div class="card-body">
                                 <h1>Card-Title</h1>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -111,7 +127,6 @@ function PlantlibO(){
                         
                     </div>
                 </div>
- 
             </div>
             
         </div>

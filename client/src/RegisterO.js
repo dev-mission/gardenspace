@@ -5,6 +5,7 @@ import Api from './Api';
 import {useAuthContext} from './AuthContext';
 import Logo from "./Logo.jpg";
 import './Header.scss';
+import './RegisterO.scss';
 
 function RegisterO(){
     const history = useHistory();
@@ -29,7 +30,7 @@ function RegisterO(){
     }
 
     return(
-        <div className="container">
+        <div className="container" id="body-container">
             <nav className="navbar navbar-expand-md navbar-light bg-light fixed-top">
             <div className="container">
                 <a class="navbar-brand" href="Home.js">
@@ -59,17 +60,21 @@ function RegisterO(){
                 <input class="btn btn-success" type="button" value="Register My Garden"/>
             </div>
             </nav>
-            <h1>Register My Garden</h1>
-            <input type="text" class="form-control" placeholder="Full Name" />
-            <input type="text" class="form-control" placeholder="Garden" />
-            <input type="text" class="form-control" placeholder="Email" />
-            <input type="text" class="form-control" placeholder="Phone Number" />
-            <input type="text" class="form-control" placeholder="Password" />
-            <button class="btn btn btn-success" type="button" id="button-addon2">Submit</button>
-            <p>
-                Already Registered?
-                <Link to="/logino">Log in</Link>
-            </p>
+            <div class="container" id="registero">
+                <h3>Register My Garden</h3>
+            
+                <input type="text" class="form-control" placeholder="Full Name" />
+                <input type="text" class="form-control" placeholder="Garden" />
+                <input type="text" class="form-control" placeholder="Email" />
+                <input type="text" class="form-control" placeholder="Phone Number" />
+                <input type="text" class="form-control" placeholder="Password" />
+                <button class="btn btn btn-success" type="button" id="button-addon2">Submit</button>
+                <p>
+                    Already Registered?
+                    <Link to="/logino">Log in</Link>
+                </p>
+                
+            </div>
         </div>
     )
 }
