@@ -16,7 +16,9 @@ import Plants from './Plants/Plants';
 import GardenPlants from './GardenPlants/GardenPlants';
 import Gardens from './Gardens/Gardens';
 import Attendees from './Attendees/Attendees';
-
+import SignUp from './SignUp';
+import SuccessPage from './SuccessPage';
+import FailPage from './FailPage';
 function App() {
   return (
     <AuthContextProvider>
@@ -48,6 +50,15 @@ function App() {
           </Route>
           <Route path="/attendees">
             <Attendees />
+          </Route>
+          <Route path="/signup">
+            <SignUp />
+          </Route>
+          <Route path="/successpage">
+            <SuccessPage />
+          </Route>
+          <Route path="/failpage">
+            <FailPage />
           </Route>
         </Switch>
       </Router>
