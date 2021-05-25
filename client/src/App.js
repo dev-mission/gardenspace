@@ -10,6 +10,7 @@ import {AuthContextProvider} from './AuthContext';
 import Header from './Header';
 import Home from './Home';
 import WhatAreCommunityGarden from './Whatarecommgar';
+import Plantlib from './Plantlib';
 import Getinvolved from './Getinvolved';
 import RegisterO from './RegisterO';
 import LoginO from './LoginO';
@@ -39,6 +40,9 @@ function App() {
           </Route>
           <Route path="/getinvolved">
             <Getinvolved />
+          </Route>
+          <Route path="/plantlib">
+            <Plantlib/>
           </Route>
           <Route path="/login">
             <Login />

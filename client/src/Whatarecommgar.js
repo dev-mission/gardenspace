@@ -48,7 +48,7 @@ function WhatAreCommunityGarden() {
                         <Link className="nav-link" aria-current="page" to="/wacg" style={{color: "white"}}>What are community garden?</Link>
                     </li>
                     <li class="nav-item">
-                        <Link className="nav-link" aria-current="page" to="/">Plant Library</Link>
+                        <Link className="nav-link" aria-current="page" to="/plantlib">Plant Library</Link>
                     </li>
                     <li class="nav-item">
                         <Link className="nav-link" aria-current="page" to="/getinvolved">Get Involved</Link>

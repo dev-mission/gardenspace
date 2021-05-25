@@ -48,7 +48,7 @@ function Getinvolved(){
                             <Link className="nav-link" aria-current="page" to="/wacg">What are community garden?</Link>
                         </li>
                         <li class="nav-item">
-                          <Link className="nav-link" aria-current="page" to="/">Plant Library</Link>
+                          <Link className="nav-link" aria-current="page" to="/plantlib">Plant Library</Link>
                         </li>
                         <li class="nav-item" style={{backgroundColor: "#2A936D"}}>
                           <Link className="nav-link" aria-current="page" to="/getinvolved" style={{color: "white"}}>Get Involved</Link>
