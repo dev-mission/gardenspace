@@ -53,7 +53,7 @@ function PlantlibO(){
                 </ul>
               </div>
             </div>
-            <input type="button" class="btn btn-outline-dark" value="Log Out" onClick="/login"/>
+            <input type="button" class="btn btn-outline-dark" value="Log Out" onClick={onLogout}/>
             </div>
         </nav>
             <div class="container" id="calendar">

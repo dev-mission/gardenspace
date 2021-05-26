@@ -30,6 +30,16 @@ function PlantlibschO(){
       history.push('/');
     };
 
+    const login = (event) => {
+        event.preventDefault();
+        history.push('/logino')
+    }
+    
+    const register = (event) => {
+        event.preventDefault();
+        history.push('/registero')
+    }
+
     return(
         <div class="container body-container">
             <nav className="navbar navbar-expand-md navbar-light bg-light fixed-top">
@@ -53,7 +63,7 @@ function PlantlibschO(){
                 </ul>
               </div>
             </div>
-            <input type="button" class="btn btn-outline-dark" value="Log Out" onClick="/login"/>
+            <input type="button" class="btn btn-outline-dark" value="Log Out" onClick={onLogout}/>
             </div>
             </nav>
             <div class="container" id="calendar">

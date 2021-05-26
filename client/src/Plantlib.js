@@ -5,6 +5,7 @@ import Api from './Api';
 import {useAuthContext} from './AuthContext';
 import Logo from "./Logo.jpg";
 import './Header.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 function Plantlib(){
 
@@ -28,6 +29,16 @@ function Plantlib(){
       setUser(null);
       history.push('/');
     };
+
+    const login = (event) => {
+        event.preventDefault();
+        history.push('/logino')
+    }
+
+    const register = (event) => {
+        event.preventDefault();
+        history.push('/registero')
+    }
 
     return(
         <div class="container body-container">
@@ -55,9 +66,9 @@ function Plantlib(){
                       </ul>
                     </div>
                 </div>
-                <input type="button" class="btn btn-outline-dark" value="Owner Log In" onClick="/login"/>
+                <input type="button" class="btn btn-outline-dark" value="Owner Log In" onClick={login}/>
                 <div id="space"></div>
-                <input class="btn btn-success" type="button" value="Register My Garden"/>         
+                <input class="btn btn-success" type="button" value="Register My Garden" onClick={register}/>         
             </div>
             </nav>
 
@@ -66,6 +77,7 @@ function Plantlib(){
                     <h1 id="schedule-title">Plant Library</h1>
                     <div className="" id="addPlant">
                         <button class="btn btn btn-success" type="button" id="button-addon2">Add new plants</button>
+                       
                     </div>
                     <div className="col-md-6 gardenInput">
                         <input type="text" class="form-control" placeholder="Search for plants"/>

@@ -30,6 +30,17 @@ function WhatAreCommunityGarden() {
       setUser(null);
       history.push('/');
     };  
+
+    const login = (event) => {
+        event.preventDefault();
+        history.push('/logino')
+    }
+
+    const register = (event) => {
+        event.preventDefault();
+        history.push('/registero')
+    }
+
     return(
         <div className="container">
             <nav className="navbar navbar-expand-md navbar-light bg-light fixed-top">
@@ -56,9 +67,9 @@ function WhatAreCommunityGarden() {
                 </ul>
                 </div>
             </div>
-            <input type="button" class="btn btn-outline-dark" value="Owner Log In" onClick="/login"/>
+            <input type="button" class="btn btn-outline-dark" value="Owner Log In" onClick={login}/>
             <div id="space"></div>
-            <input class="btn btn-success" type="button" value="Register My Garden"/>
+            <input class="btn btn-success" type="button" value="Register My Garden" onClick={register}/>
             </div>
             </nav>
             <div className="col-md-6">
