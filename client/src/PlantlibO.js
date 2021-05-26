@@ -34,10 +34,10 @@ function PlantlibO(){
         <div class="container body-container">
             <nav className="navbar navbar-expand-md navbar-light bg-light fixed-top">
             <div className="container">
-                <a class="navbar-brand" href="Home.js">
+                <a class="navbar-brand" href="/">
                     <img src={Logo} alt="Logo" width="50.53" height="50.53" class="d-inline-block align-text-top" />
                 </a>
-            <Link className="navbar-brand" to="Home.js" id="HeaderTitle">GardenSpace</Link>
+            <Link className="navbar-brand" to="/" id="HeaderTitle">GardenSpace</Link>
             <div className="collapse navbar-collapse" id="navbarsExampleDefault">
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">

@@ -1,9 +1,8 @@
 @import '~bootstrap/scss/bootstrap.scss';
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
-#body-container{
+.body-container{
     margin-top: 8px;
-    max-width: 1200px;
 }
 .container{
     display: flex

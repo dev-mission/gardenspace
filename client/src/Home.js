@@ -32,13 +32,13 @@ function Home() {
   };
 
   return (
-    <div className="container" id="body-container">
+    <div className="container">
       <nav className="navbar navbar-expand-md navbar-light bg-light fixed-top">
         <div className="container">
-          <a class="navbar-brand" href="Home.js">
+          <a class="navbar-brand" href="/">
             <img src={Logo} alt="Logo" width="50.53" height="50.53" class="d-inline-block align-text-top" />
           </a>
-          <Link className="navbar-brand" to="Home.js" id="HeaderTitle">GardenSpace</Link>
+          <Link className="navbar-brand" to="/" id="HeaderTitle">GardenSpace</Link>
             <div className="collapse navbar-collapse" id="navbarsExampleDefault">
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
@@ -46,7 +46,7 @@ function Home() {
                     <Link className="nav-link" aria-current="page" to="/">Garden Locator</Link>
                   </li>
                   <li class="nav-item">
-                  <Link className="nav-link" aria-current="page" to="/wacg">What are community garden?</Link>
+                    <Link className="nav-link" aria-current="page" to="/wacg">What are community garden?</Link>
                   </li>
                   <li class="nav-item">
                     <Link className="nav-link" aria-current="page" to="/plantlib">Plant Library</Link>
@@ -57,61 +57,66 @@ function Home() {
                 </ul>
               </div>
             </div>
-            <input type="button" class="btn btn-outline-dark" value="Owner Log In" onClick="/login"/>
+            
+            <input type="button" class="btn btn-outline-dark" value="Owner Log In">
+            </input>
             <div id="space"></div>
-            <input class="btn btn-success" type="button" value="Register My Garden"/>
+            <input class="btn btn-success" type="button" value="Register My Garden">
+            </input>
         </div>
       </nav>
-      <div className="col-md-6">
-        <img src={Gardenimg} class="img-thumbnail" alt="Garden Image"/>
-      </div>
+      <div className="container">
+        <div className="col-md-6">
+          <img src={Gardenimg} class="img-thumbnail" alt="Garden Image"/>
+        </div>
 
-    <div className="col-md-6">
-      {/*<div className="">
-      <input className="" placeholder="Find a community garden near you" type="input"/>
-      <input type="submit"/>
-      </div>*/}
-      <div class="input-group mb-3">
-        <input type="text" class="form-control" placeholder="Find a community garden near you" />
-        <button class="btn btn btn-success" type="button" id="button-addon2">Submit</button>
+        <div className="col-md-6">
+          {/*<div className="">
+          <input className="" placeholder="Find a community garden near you" type="input"/>
+          <input type="submit"/>
+          </div>*/}
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Find a community garden near you" />
+            <button class="btn btn btn-success" type="button" id="button-addon2">Submit</button>
+          </div>
+          <div>
+            <div className="container">
+              <div className="col-md-4 mapBox">
+
+              </div>
+              <div className="col-md-8 gardenInfo">
+                  <h1>Garden</h1>
+                  <p>Address</p>
+                  <p>Type of Garden</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div className="container">
+              <div className="col-md-4 mapBox">
+
+              </div>
+              <div className="col-md-8 gardenInfo">
+                  <h1>Garden</h1>
+                  <p>Address</p>
+                  <p>Type of Garden</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div className="container">
+              <div className="col-md-4 mapBox">
+
+              </div>
+              <div className="col-md-8 gardenInfo">
+                  <h1>Garden</h1>
+                  <p>Address</p>
+                  <p>Type of Garden</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    <div>
-      <div className="container">
-        <div className="col-md-4 mapBox">
-         
-        </div>
-        <div className="col-md-8 gardenInfo">
-            <h1>Garden</h1>
-            <p>Address</p>
-            <p>Type of Garden</p>
-        </div>
-      </div>
-    </div>
-    <div>
-      <div className="container">
-        <div className="col-md-4 mapBox">
-         
-        </div>
-        <div className="col-md-8 gardenInfo">
-            <h1>Garden</h1>
-            <p>Address</p>
-            <p>Type of Garden</p>
-        </div>
-      </div>
-    </div>
-    <div>
-      <div className="container">
-        <div className="col-md-4 mapBox">
-        
-        </div>
-        <div className="col-md-8 gardenInfo">
-            <h1>Garden</h1>
-            <p>Address</p>
-            <p>Type of Garden</p>
-        </div>
-      </div>
-    </div>
-  </div>
   </div>  
   );
 }
