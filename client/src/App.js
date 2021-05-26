@@ -23,7 +23,6 @@ function App() {
   return (
     <AuthContextProvider>
       <Router>
-        <Header />
         <Switch>
           <Route exact path="/">
             <Home />
