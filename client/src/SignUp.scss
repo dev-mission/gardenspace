@@ -1,7 +1,10 @@
+@import '~bootstrap/scss/bootstrap.scss';
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
 .card{
     margin-left: auto;
     margin-right: auto;
-    width: 540px;
+    width: 50px;
     height: auto;
 }
 h1{
@@ -18,16 +21,19 @@ img {
     padding:20px;
 }
 
-.form-group{
-    margin-bottom: 10px;
-    
-}
-.form-control{
-    margin-left: auto;
-    margin-right: auto;
+.form{
     width: 540px;
     height: auto; 
+    margin-left: auto;
+    margin-right: auto;
+   
 }
+
+.form-group{
+    margin-bottom: 10px;
+
+}
+
 .confirm{
     margin-left: auto;
     margin-right: auto;
@@ -35,6 +41,4 @@ img {
     height: auto; 
     
 }
-.btn btn-primary{
-    background-color: rgba(42, 147, 109, 1);
-}
+

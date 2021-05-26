@@ -1,3 +1,5 @@
+@import '~bootstrap/scss/bootstrap.scss';
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 .card{
     margin-left: auto;
     margin-right: auto;
@@ -6,6 +8,10 @@
 }
 h1{
     text-align: center;
+}
+h8{
+    text-align: left;
+    
 }
 img {
     width: 100%;
@@ -17,13 +23,17 @@ img {
     text-align:center;
     padding:20px;
 }
+.first-button{
+    margin-bottom: 10px;
+}
 
 .buttongroup{
     margin-left: auto;
     margin-right: auto;
     width: 540px;
     height: auto;
-   
+    
+
 }
 .btn btn-outline-secondary{
     margin-bottom: 10px;

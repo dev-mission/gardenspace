@@ -4,6 +4,7 @@ function SignUp() {
     return (
         
       <main className="container">
+        &lt; <u><h8>  Back to Get Involved</h8></u>
         <h1>Confirm Reservation</h1>
         <div class="container bcontent">
         <div class="card">
@@ -15,26 +16,27 @@ function SignUp() {
                 </div>
                 <div class="col-sm-7">
                     <div class="card-body">
-                        <h5 class="card-title">Suresh Dasari</h5>
-                        <p class="card-text">Suresh Dasari is a founder and technical lead developer in tutlane.</p>
-                        <a href="#" class="btn btn-primary">View Profile</a>
+                        <h7 class="card-title">12:00 PM / Jan. 5</h7>
+                        <h2>Tour - Alemany Farm</h2>
+                        <p class="card-text">700 Alemany Blvd, San Francisco, CA 94110</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <form>
+    <div class = "form">
   <div class="form-group">
-    
-  <input class="form-control" type="text" placeholder="Default input"/>
+  <input class="form-control" type="text" placeholder="Full Name"/>
     <small id="emailHelp" class="form-text text-muted"></small>
   </div>
   <div class="form-group">
     
-  <input class="form-control" type="text" placeholder="Default input"/>
+  <input class="form-control" type="text" placeholder="Email"/>
+  </div>
   </div>
   <div class ="confirm">
-  <button type="submit" class="btn btn-primary">Confirm</button>
+  <button type="submit" class="btn btn-success">Confirm</button>
   </div>
 </form>
       </main>    

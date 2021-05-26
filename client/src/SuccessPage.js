@@ -4,6 +4,7 @@ function SuccessPage() {
     return (
         
       <main className="container">
+      &lt; <u><h8>  Back to Get Involved</h8></u>
         <h1>Successfully Booked!</h1>
         <div class="container bcontent">
         <div class="card">
@@ -15,8 +16,8 @@ function SuccessPage() {
                 </div>
                 <div class="col-sm-7">
                     <div class="card-body">
-                        <h5 class="card-title">Suresh Dasari</h5>
-                        <p class="card-text">Suresh Dasari is a founder and technical lead developer in tutlane.</p>
+                        <h6 class="card-title">Kevin Lee</h6>
+                       <h6> <p class="card-text">kevinlee@gmail.com <br></br>12:00 PM / Jan. 5<br></br>Tour - Alemany Farm<br></br>700 Alemany Blvd, San Francisco, CA 94110</p> </h6>
                         
                     </div>
                 </div>
