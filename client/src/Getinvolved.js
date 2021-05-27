@@ -4,6 +4,7 @@ import {useHistory, Link} from 'react-router-dom';
 import Api from './Api';
 import {useAuthContext} from './AuthContext';
 import Logo from "./Logo.jpg";
+import Getinvolvedimg from "./Getinvolved.jpg";
 import './Header.scss';
 import './Getinvolved.scss';
 
@@ -120,16 +121,16 @@ function Getinvolved(){
                     Garden
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                    <li><a class="dropdown-item" href="#">Option 1</a></li>
-                    <li><a class="dropdown-item" href="#">Option 2</a></li>
-                    <li><a class="dropdown-item" href="#">Option 3</a></li>
+                    <li><a class="dropdown-item" href="#">Garden 1</a></li>
+                    <li><a class="dropdown-item" href="#">Garden 2</a></li>
+                    <li><a class="dropdown-item" href="#">Garden 3</a></li>
                 </ul>
             </div>
 
             <div class="card mb-3">
                 <div class="row g-0">
                     <div class="col-md-4">
-                        <img src="" alt=""/>
+                        <img src={Getinvolvedimg} alt="Get Involved"/>
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
@@ -146,7 +147,7 @@ function Getinvolved(){
             <div class="card mb-3">
                 <div class="row g-0">
                     <div class="col-md-4">
-                        <img src="" alt=""/>
+                        <img src={Getinvolvedimg} alt="Get Involved"/>
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
@@ -163,7 +164,7 @@ function Getinvolved(){
             <div class="card mb-3">
                 <div class="row g-0">
                     <div class="col-md-4">
-                        <img src="" alt=""/>
+                        <img src={Getinvolvedimg} alt="Get Involved"/>
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">

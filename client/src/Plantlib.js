@@ -4,6 +4,12 @@ import {useHistory, Link} from 'react-router-dom';
 import Api from './Api';
 import {useAuthContext} from './AuthContext';
 import Logo from "./Logo.jpg";
+import Sunflower from "./Sunflower.jpg";
+import Bamboo from "./Bamboo.jpg";
+import Agave from "./Agave.jpg";
+import Corriander from "./Corriander.jpg";
+import Cactus from "./Cactus.jpg";
+import Snapdragon from "./Snapdragon.jpg";
 import './Header.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
@@ -93,10 +99,10 @@ function Plantlib(){
                     </div>
                     <div class="container">
                         <div class="card" className="col-md-4" style={{width: "100px;"}}>
-                            <div id="imgdiv"></div>
+                            <img id="imgdiv" src={Sunflower} alt="Sunflower" />
                             <div class="card-body">
-                                <h1>Card-Title</h1>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <h1>Sunflowers</h1>
+                                <p class="card-text">Sunflowers are known for being “happy” flowers, making them the perfect gift to bring joy to someone's (or your) day.</p>
                             </div>
                             <div class="card-body">
                                 <div>Location</div>
@@ -104,41 +110,41 @@ function Plantlib(){
                             </div>
                         </div>
                         <div class="card" className="col-md-4" style={{width: "100px;"}}>
-                            <div id="imgdiv"></div>
+                            <img id="imgdiv" src={Bamboo} alt="Bamboo"/>
                             <div class="card-body">
-                                <h1>Card-Title</h1>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <h1>Bamboos</h1>
+                                <p class="card-text">Most bamboo species are native to warm and moist tropical and to warm temperate climates.</p>
                             </div>
                         </div>
                         <div class="card" className="col-md-4" style={{width: "100px;"}}>
-                            <div id="imgdiv"></div>
+                            <img id="imgdiv" src={Agave} alt="Agave"/>
                             <div class="card-body">
-                                <h1>Card-Title</h1>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <h1>Agave</h1>
+                                <p class="card-text">Traditionally, agave was believed to have medicinal properties. Its sap was also boiled to produce a sweetener known as miel de agave.</p>
                             </div>
                         </div>
                         
                     </div>
                     <div class="container">
                         <div class="card" className="col-md-4" style={{width: "100px;"}}>
-                            <div id="imgdiv"></div>
+                            <img id="imgdiv" src={Corriander} alt="Corriander"/>
                             <div class="card-body">
-                                <h1>Card-Title</h1>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <h1>Coriander</h1>
+                                <p class="card-text">The leaves are variable in shape, broadly lobed at the base of the plant, and slender and feathery higher on the flowering stems. </p>
                             </div>
                         </div>
                         <div class="card" className="col-md-4" style={{width: "100px;"}}>
-                            <div id="imgdiv"></div>
+                            <img id="imgdiv" src={Cactus} alt="Cactus"/>
                             <div class="card-body">
-                                <h1>Card-Title</h1>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <h1>Cactus</h1>
+                                <p class="card-text">Cactus are native through most of the length of North and South America, from British Columbia and Alberta southward</p>
                             </div>
                         </div>
                         <div class="card" className="col-md-4" style={{width: "100px;"}}>
-                            <div id="imgdiv"></div>
+                            <img id="imgdiv" src={Snapdragon} alt="Snapdragon"/>
                             <div class="card-body">
-                                <h1>Card-Title</h1>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <h1>Snapdragon</h1>
+                                <p class="card-text">Snapdragons are very popular short-lived garden perennials that are usually grown as annuals. They are a mainstay of classic flower gardens, with infinite uses, from mixed border gardens to flower boxes to patio containers.</p>
                             </div>
                         </div>
                         
