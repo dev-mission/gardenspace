@@ -38,3 +38,13 @@ h8{
 .btn btn-outline-secondary{
     margin-bottom: 10px;
 }
+
+#successpage-container{
+    display: flex;
+    justify-content: center;
+}
+
+#successpage{
+    display: flex;
+    flex-direction: column;
+}
