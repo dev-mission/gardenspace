@@ -1,0 +1,17 @@
+@import '~bootstrap/scss/bootstrap.scss';
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+h1,h3{
+    text-align: center;    
+}
+.first-button{
+    margin-left: auto;
+    margin-right: auto;
+    width: 540px;
+    height: auto;
+}
+
+#failpage{
+    display: flex;
+    flex-direction: column;
+}
