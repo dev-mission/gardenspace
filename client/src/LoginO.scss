@@ -1,0 +1,34 @@
+@import '~bootstrap/scss/bootstrap.scss';
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+#body-container{
+    margin-top: 8px;
+    max-width: 500px;
+}
+
+#logino{
+    display: flex;
+    flex-direction: column;
+}
+
+#logino input{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+#registero h3{
+    color: #000000;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+#registero p{
+    color: #111111;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+}

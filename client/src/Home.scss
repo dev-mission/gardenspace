@@ -1,0 +1,30 @@
+@import '~bootstrap/scss/bootstrap.scss';
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+.body-container{
+    margin-top: 8px;
+}
+.container{
+    display: flex
+}
+
+.mapBox{
+    height: 265px;
+    width: 219px;
+    margin-bottom: 4px;
+}
+.gardenInfo h1{
+    color: #000000;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    margin-left: 20px;
+}
+
+.gardenInfo p{
+    color: #111111;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    margin-left: 20px;
+}
