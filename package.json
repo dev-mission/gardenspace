@@ -8,6 +8,7 @@
     "test": "mocha --recursive"
   },
   "dependencies": {
+    "@fortawesome/react-fontawesome": "^0.1.14",
     "aws-sdk": "^2.817.0",
     "bcrypt": "^5.0.0",
     "body-parser": "^1.19.0",
@@ -15,7 +16,7 @@
     "debug": "~2.6.9",
     "dotenv": "^6.2.0",
     "ejs": "^3.1.5",
-    "email-templates": "^5.1.0",
+    "email-templates": "^8.0.7",
     "express": "~4.16.0",
     "express-fileupload": "^1.2.0",
     "fs-extra": "^8.1.0",
@@ -23,7 +24,7 @@
     "http-status-codes": "^2.1.4",
     "i18n": "^0.8.6",
     "jquery": "^3.5.1",
-    "lodash": "^4.17.20",
+    "lodash": "^4.17.21",
     "luxon": "^1.25.0",
     "mime-types": "^2.1.27",
     "mkdirp": "^0.5.1",
