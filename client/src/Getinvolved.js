@@ -132,7 +132,7 @@ function Getinvolved(){
                     <div class="col-md-4">
                         <img src={Getinvolvedimg} alt="Get Involved"/>
                     </div>
-                    <div class="col-md-8">
+                    <div class="col-md-8" id="getinvolved-card">
                         <div class="card-body">
                             <p class="card-text">Time/Date</p>
                             <h5 class="card-title">Event Title</h5>
@@ -149,7 +149,7 @@ function Getinvolved(){
                     <div class="col-md-4">
                         <img src={Getinvolvedimg} alt="Get Involved"/>
                     </div>
-                    <div class="col-md-8">
+                    <div class="col-md-8" id="getinvolved-card">
                         <div class="card-body">
                             <p class="card-text">Time/Date</p>
                             <h5 class="card-title">Event Title</h5>
@@ -166,7 +166,7 @@ function Getinvolved(){
                     <div class="col-md-4">
                         <img src={Getinvolvedimg} alt="Get Involved"/>
                     </div>
-                    <div class="col-md-8">
+                    <div class="col-md-8" id="getinvolved-card">
                         <div class="card-body">
                             <p class="card-text">Time/Date</p>
                             <h5 class="card-title">Event Title</h5>
