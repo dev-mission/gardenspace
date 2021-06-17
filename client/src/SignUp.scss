@@ -1,7 +1,22 @@
 @import '~bootstrap/scss/bootstrap.scss';
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
-.card{
+#signup-container{
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+}
+
+#signup-input{
+    display: flex;
+    flex-direction: column;
+}
+
+#signup-input div{
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+/*.card{
     margin-left: auto;
     margin-right: auto;
     width: 50px;
@@ -45,4 +60,4 @@ h1{
 #signup{
     display: flex;
     flex-direction: column;
-}
+}*/

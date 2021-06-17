@@ -41,6 +41,11 @@ function Getinvolved(){
         history.push('/registero')
     }
 
+    const signup = (event) => {
+        event.preventDefault();
+        history.push('/signup')
+    }
+
     return(
         <div class="container body-container">
             <nav className="navbar navbar-expand-md navbar-light bg-light fixed-top">
@@ -132,13 +137,13 @@ function Getinvolved(){
                     <div class="col-md-4">
                         <img src={Getinvolvedimg} alt="Get Involved"/>
                     </div>
-                    <div class="col-md-8" id="getinvolved-card">
+                    <div class="col-md-8">
                         <div class="card-body">
                             <p class="card-text">Time/Date</p>
                             <h5 class="card-title">Event Title</h5>
                             <p class="card-text">Address</p>
                             <p class="card-text">Description</p>
-                            <button type="button" class="btn btn-success">Sign Up</button>
+                            <input class="btn btn-success" type="button" value="Sign Up" onClick={signup}/> 
                         </div>
                     </div>
                 </div>
@@ -149,13 +154,13 @@ function Getinvolved(){
                     <div class="col-md-4">
                         <img src={Getinvolvedimg} alt="Get Involved"/>
                     </div>
-                    <div class="col-md-8" id="getinvolved-card">
+                    <div class="col-md-8">
                         <div class="card-body">
                             <p class="card-text">Time/Date</p>
                             <h5 class="card-title">Event Title</h5>
                             <p class="card-text">Address</p>
                             <p class="card-text">Description</p>
-                            <button type="button" class="btn btn-success">Sign Up</button>
+                            <input class="btn btn-success" type="button" value="Sign Up" onClick={signup}/> 
                         </div>
                     </div>
                 </div>
@@ -166,13 +171,13 @@ function Getinvolved(){
                     <div class="col-md-4">
                         <img src={Getinvolvedimg} alt="Get Involved"/>
                     </div>
-                    <div class="col-md-8" id="getinvolved-card">
+                    <div class="col-md-8">
                         <div class="card-body">
                             <p class="card-text">Time/Date</p>
                             <h5 class="card-title">Event Title</h5>
                             <p class="card-text">Address</p>
                             <p class="card-text">Description</p>
-                            <button type="button" class="btn btn-success">Sign Up</button>
+                            <input class="btn btn-success" type="button" value="Sign Up" onClick={signup}/>
                         </div>
                     </div>
                 </div>

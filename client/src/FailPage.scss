@@ -1,7 +1,22 @@
 @import '~bootstrap/scss/bootstrap.scss';
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
-h1,h3{
+#failpage-container{
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+}
+
+#failpage-container div{
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+#failpage-description{
+    display: flex;
+    flex-direction: column;
+}
+/*h1,h3{
     text-align: center;    
 }
 .first-button{
@@ -14,4 +29,4 @@ h1,h3{
 #failpage{
     display: flex;
     flex-direction: column;
-}
+}*/

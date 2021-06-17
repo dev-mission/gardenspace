@@ -12,6 +12,9 @@ import Home from './Home';
 import WhatAreCommunityGarden from './Whatarecommgar';
 import Plantlib from './Plantlib';
 import Getinvolved from './Getinvolved';
+import SignUp from './SignUp';
+import FailPage from './FailPage';
+import SuccessPage from './SuccessPage'
 import RegisterO from './RegisterO';
 import LoginO from './LoginO';
 import ProfileEditO from './ProfileEditO'
@@ -25,13 +28,12 @@ import Plants from './Plants/Plants';
 import GardenPlants from './GardenPlants/GardenPlants';
 import Gardens from './Gardens/Gardens';
 import Attendees from './Attendees/Attendees';
-import SignUp from './SignUp';
-import SuccessPage from './SuccessPage';
-import FailPage from './FailPage';
+
 function App() {
   return (
     <AuthContextProvider>
       <Router>
+        {/*<Header />*/}
         <Switch>
           <Route exact path="/">
             <Home />
@@ -47,6 +49,15 @@ function App() {
           </Route>
           <Route path="/login">
             <Login />
+          </Route>
+          <Route path="/signup">
+            <SignUp />
+          </Route>
+          <Route path="/failpage">
+            <FailPage />
+          </Route>
+          <Route path="/successpage">
+            <SuccessPage />
           </Route>
           <Route path="/passwords">
             <Passwords />
@@ -86,15 +97,12 @@ function App() {
           <Route path="/attendees">
             <Attendees />
           </Route>
-          <Route path="/signup">
-            <SignUp />
-          </Route>
-          <Route path="/successpage">
-            <SuccessPage />
-          </Route>
-          <Route path="/failpage">
-            <FailPage />
-          </Route>
+            <Route path="/profile">
+              {/*<Profile />*/}
+            </Route>
+            <Route path="/attendee">
+              <Attendees />
+            </Route>
         </Switch>
       </Router>
     </AuthContextProvider>
