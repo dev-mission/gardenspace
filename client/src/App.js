@@ -12,6 +12,9 @@ import Home from './Home';
 import WhatAreCommunityGarden from './Whatarecommgar';
 import Plantlib from './Plantlib';
 import Getinvolved from './Getinvolved';
+import SignUp from './SignUp';
+import FailPage from './FailPage';
+import SuccessPage from './SuccessPage'
 import RegisterO from './RegisterO';
 import LoginO from './LoginO';
 import ProfileEditO from './ProfileEditO'
@@ -46,6 +49,15 @@ function App() {
           </Route>
           <Route path="/login">
             <Login />
+          </Route>
+          <Route path="/signup">
+            <SignUp />
+          </Route>
+          <Route path="/failpage">
+            <FailPage />
+          </Route>
+          <Route path="/successpage">
+            <SuccessPage />
           </Route>
           <Route path="/passwords">
             <Passwords />

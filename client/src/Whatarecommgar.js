@@ -78,7 +78,12 @@ function WhatAreCommunityGarden() {
             <div className="col-md-6 gardendesc">
                 <h1>What Are Community Gardens?</h1>
                 <p>
-                    In ultricies fermentum aliquet. Pellentesque dui magna, condimentum non ullamcorper at, cursus in sem. Nunc condimentum, purus ac sagittis ultricies, metus leo pharetra mi, non vehicula felis elit et nisi. Etiam venenatis commodo libero, vel ullamcorper nibh lobortis vel. Aliquam auctor porta tortor, nec consequat nibh finibus a. Sed ultrices risus eget iaculis luctus. Mauris vel gravida magna.
+                    Community Gardens are plots of land owned by the city and maintained by the community and can be used is variety of ways: Growing Food, Learning about agriculture, and having fun and meeting new people. 
+                </p>
+                <p>
+                    Our image is to make it easier for users to learn and connect with all community garden organizers in the bay area.
+                    As Community Gardens become more and more of a well known hobby, there needs to be a easier way to connect users with community gardens.
+                    GardenSpace is a platform that demonstrates and provide information for each community garden in the bay area and allow a way to connect with them.
                 </p>
             </div>
         </div>

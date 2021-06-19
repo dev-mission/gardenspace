@@ -1,0 +1,61 @@
+@import '~bootstrap/scss/bootstrap.scss';
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+#successpage-container{
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+}
+
+#success-input{
+    display: flex;
+    flex-direction: column;
+}
+
+#success-input div{
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+/*.card{
+    margin-left: auto;
+    margin-right: auto;
+    width: 540px;
+    height: auto;
+}
+h1{
+    text-align: center;
+}
+h8{
+    text-align: left;
+    
+}
+.image{
+    width:auto;
+    text-align:center;
+    padding:20px;
+}
+.first-button{
+    margin-bottom: 10px;
+}
+
+.buttongroup{
+    margin-left: auto;
+    margin-right: auto;
+    width: 540px;
+    height: auto;
+    
+
+}
+.btn btn-outline-secondary{
+    margin-bottom: 10px;
+}
+
+#successpage-container{
+    display: flex;
+    justify-content: center;
+}
+
+#successpage{
+    display: flex;
+    flex-direction: column;
+}*/

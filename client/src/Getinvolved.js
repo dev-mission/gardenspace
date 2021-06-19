@@ -41,6 +41,11 @@ function Getinvolved(){
         history.push('/registero')
     }
 
+    const signup = (event) => {
+        event.preventDefault();
+        history.push('/signup')
+    }
+
     return(
         <div class="container body-container">
             <nav className="navbar navbar-expand-md navbar-light bg-light fixed-top">
@@ -138,7 +143,7 @@ function Getinvolved(){
                             <h5 class="card-title">Event Title</h5>
                             <p class="card-text">Address</p>
                             <p class="card-text">Description</p>
-                            <button type="button" class="btn btn-success">Sign Up</button>
+                            <input class="btn btn-success" type="button" value="Sign Up" onClick={signup}/> 
                         </div>
                     </div>
                 </div>
@@ -155,7 +160,7 @@ function Getinvolved(){
                             <h5 class="card-title">Event Title</h5>
                             <p class="card-text">Address</p>
                             <p class="card-text">Description</p>
-                            <button type="button" class="btn btn-success">Sign Up</button>
+                            <input class="btn btn-success" type="button" value="Sign Up" onClick={signup}/> 
                         </div>
                     </div>
                 </div>
@@ -172,7 +177,7 @@ function Getinvolved(){
                             <h5 class="card-title">Event Title</h5>
                             <p class="card-text">Address</p>
                             <p class="card-text">Description</p>
-                            <button type="button" class="btn btn-success">Sign Up</button>
+                            <input class="btn btn-success" type="button" value="Sign Up" onClick={signup}/>
                         </div>
                     </div>
                 </div>
