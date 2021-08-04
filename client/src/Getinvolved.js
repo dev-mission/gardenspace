@@ -48,7 +48,7 @@ function Getinvolved(){
 
     return(
         <div class="container body-container">
-            <nav className="navbar navbar-expand-md navbar-light bg-light fixed-top">
+            {/*<nav className="navbar navbar-expand-md navbar-light bg-light fixed-top">
             <div className="container">
                 <a class="navbar-brand" href="/">
                     <img src={Logo} alt="Logo" width="50.53" height="50.53" class="d-inline-block align-text-top" />
@@ -76,7 +76,7 @@ function Getinvolved(){
                 <div id="space"></div>
                 <input class="btn btn-success" type="button" value="Register My Garden" onClick={register}/>         
             </div>
-            </nav>
+    </nav>*/}
             <div class="container" id="calendar">
                 <div className="col-md-12">
                     <h1 id="schedule-title">Schedule</h1>
