@@ -1,8 +1,8 @@
 import {useEffect} from 'react';
 import {useHistory, Link} from 'react-router-dom';
-
 import Api from './Api';
 import {useAuthContext} from './AuthContext';
+import {GoogleApiWrapper} from 'google-maps-react';
 import Logo from "./Logo.jpg";
 import Gardenimg from "./gardenimg.jpg";
 import Geneva from './Geneva.jpg';
@@ -133,4 +133,6 @@ function Home() {
   );
 }
 
-export default Home;
+export default GoogleApiWrapper({
+  apiKey: "AIzaSyCbmX-s9ilVrJpvV1UILOkcI8rzCvMSuLY"
+})(Home)
