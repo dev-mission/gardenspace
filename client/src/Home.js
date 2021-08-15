@@ -147,5 +147,5 @@ function Home() {
 }
 
 export default GoogleApiWrapper({
-  apiKey: "AIzaSyAxUBe7Q5lgu0pwqG0NQeyhiusJ3gV3r5A"
+  apiKey: process.env.REACT_APP_SECRET_KEY
 })(Home)
