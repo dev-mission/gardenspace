@@ -2,7 +2,7 @@ import {useEffect} from 'react';
 import {useHistory, Link} from 'react-router-dom';
 import Api from './Api';
 import {useAuthContext} from './AuthContext';
-import {GoogleApiWrapper} from 'google-maps-react';
+import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
 import Logo from "./Logo.jpg";
 import Gardenimg from "./gardenimg.jpg";
 import Geneva from './Geneva.jpg';
@@ -79,7 +79,20 @@ function Home() {
       </nav>
       <div className="container">
         <div className="col-md-6">
-          <img src={Gardenimg} class="img-thumbnail" alt="Garden Image"/>
+          <Map
+            google={this.props.google}
+            zoom={14}
+            style={{width: '100%', height: '100%', position: 'relative'}}
+            initialCenter={{
+              lat: 40.854885,
+              lng: -88.081807
+            }}
+          >
+            <Marker
+              title={'The marker`s title will appear as a tooltip.'}
+              name={'SOMA'}
+              position={{lat: 37.778519, lng: -122.405640}} />
+          </Map>
         </div>
 
         <div className="col-md-6">
@@ -134,5 +147,5 @@ function Home() {
 }
 
 export default GoogleApiWrapper({
-  apiKey: "AIzaSyCbmX-s9ilVrJpvV1UILOkcI8rzCvMSuLY"
+  apiKey: "AIzaSyAxUBe7Q5lgu0pwqG0NQeyhiusJ3gV3r5A"
 })(Home)
