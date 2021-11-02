@@ -43,35 +43,6 @@ function WhatAreCommunityGarden() {
 
     return(
         <div className="container">
-            <nav className="navbar navbar-expand-md navbar-light bg-light fixed-top">
-            <div className="container">
-                <a class="navbar-brand" href="/">
-                    <img src={Logo} alt="Logo" width="50.53" height="50.53" class="d-inline-block align-text-top" />
-                </a>
-            <Link className="navbar-brand" to="/" id="HeaderTitle">GardenSpace</Link>
-            <div className="collapse navbar-collapse" id="navbarsExampleDefault">
-                <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <Link className="nav-link" aria-current="page" to="/">Garden Locator</Link>
-                    </li>
-                    <li class="nav-item" style={{backgroundColor: "#2A936D"}}>
-                        <Link className="nav-link" aria-current="page" to="/wacg" style={{color: "white"}}>What are community garden?</Link>
-                    </li>
-                    <li class="nav-item">
-                        <Link className="nav-link" aria-current="page" to="/plantlib">Plant Library</Link>
-                    </li>
-                    <li class="nav-item">
-                        <Link className="nav-link" aria-current="page" to="/getinvolved">Get Involved</Link>
-                    </li>
-                </ul>
-                </div>
-            </div>
-            <input type="button" class="btn btn-outline-dark" value="Owner Log In" onClick={login}/>
-            <div id="space"></div>
-            <input class="btn btn-success" type="button" value="Register My Garden" onClick={register}/>
-            </div>
-            </nav>
             <div className="col-md-6">
                 <img src={picofgarden} class="img-thumbnail" alt="Garden Image"/>
             </div>

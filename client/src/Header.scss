@@ -16,13 +16,11 @@
     line-height: 48px;
 }
 
-#nav-item1{
-    background-color: #2A936D;
+.is-active{
+    background-color:  #2A936D;
+    color: white
 }
 
-#nav-item1 .nav-link{
-    color:white;
-}
 #space{
     margin: 8px;
 }
