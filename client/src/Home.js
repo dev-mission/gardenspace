@@ -11,7 +11,7 @@ import Portrero from './Portrero.jpg';
 import './Header.scss';
 import './Home.scss';
 
-function Home() {
+function Home(props) {
 
   const history = useHistory();
   const {user, setUser} = useAuthContext();
@@ -80,7 +80,7 @@ function Home() {
       <div className="container">
         <div className="col-md-6">
           <Map
-            google={this.props.google}
+            google={props.google}
             zoom={14}
             style={{width: '100%', height: '100%', position: 'relative'}}
             initialCenter={{
