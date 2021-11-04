@@ -34,6 +34,9 @@ function Home(props) {
     history.push('/');
   };
 
+  const style={
+  
+  }
   const login = (event) => {
     event.preventDefault();
     history.push('/logino')
@@ -79,21 +82,23 @@ function Home(props) {
       </nav>
       <div className="container">
         <div className="col-md-6">
-          <Map
-            google={props.google}
-            zoom={14}
-            style={{width: '100%', height: '100%', position: 'relative'}}
-            initialCenter={{
-              lat: 40.854885,
-              lng: -88.081807
-            }}
-          >
-            <Marker
-              title={'The marker`s title will appear as a tooltip.'}
-              name={'SOMA'}
-              position={{lat: 37.778519, lng: -122.405640}} />
-          </Map>
-        </div>
+          <div className="container">
+	          <Map
+              google={props.google}
+              zoom={14}
+              style={{height:"50%", width:"43%"}}
+              initialCenter={{
+                lat: 40.854885,
+                lng: -88.081807
+              }}
+            >
+              <Marker
+                title={'The marker`s title will appear as a tooltip.'}
+                name={'SOMA'}
+                position={{lat: 37.778519, lng: -122.405640}} />
+            </Map>
+          </div>    
+ 	      </div>
 
         <div className="col-md-6">
           {/*<div className="">

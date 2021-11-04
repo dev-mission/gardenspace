@@ -5,9 +5,14 @@
     margin-top: 8px;
 }
 .container{
-    display: flex
+    display: flex;
+
 }
 
+#map{
+    display: flex;
+    overflow: auto;
+}
 .mapBox{
     height: 265px;
     width: 219px;
