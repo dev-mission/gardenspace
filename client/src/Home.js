@@ -1,8 +1,8 @@
 import {useEffect} from 'react';
 import {useHistory, Link} from 'react-router-dom';
-
 import Api from './Api';
 import {useAuthContext} from './AuthContext';
+import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
 import Logo from "./Logo.jpg";
 import Gardenimg from "./gardenimg.jpg";
 import Geneva from './Geneva.jpg';
@@ -11,7 +11,7 @@ import Portrero from './Portrero.jpg';
 import './Header.scss';
 import './Home.scss';
 
-function Home() {
+function Home(props) {
 
   const history = useHistory();
   const {user, setUser} = useAuthContext();
@@ -34,6 +34,9 @@ function Home() {
     history.push('/');
   };
 
+  const style={
+  
+  }
   const login = (event) => {
     event.preventDefault();
     history.push('/logino')
@@ -79,8 +82,23 @@ function Home() {
       </nav>
       <div className="container">
         <div className="col-md-6">
-          <img src={Gardenimg} class="img-thumbnail" alt="Garden Image"/>
-        </div>
+          <div className="container">
+	          <Map
+              google={props.google}
+              zoom={14}
+              style={{height:"50%", width:"43%"}}
+              initialCenter={{
+                lat: 40.854885,
+                lng: -88.081807
+              }}
+            >
+              <Marker
+                title={'The marker`s title will appear as a tooltip.'}
+                name={'SOMA'}
+                position={{lat: 37.778519, lng: -122.405640}} />
+            </Map>
+          </div>    
+ 	      </div>
 
         <div className="col-md-6">
           {/*<div className="">
@@ -133,4 +151,6 @@ function Home() {
   );
 }
 
-export default Home;
+export default GoogleApiWrapper({
+  apiKey: process.env.REACT_APP_SECRET_KEY
+})(Home)
