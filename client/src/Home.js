@@ -34,9 +34,6 @@ function Home(props) {
     history.push('/');
   };
 
-  const style={
-  
-  }
   const login = (event) => {
     event.preventDefault();
     history.push('/logino')
@@ -86,7 +83,7 @@ function Home(props) {
 	          <Map
               google={props.google}
               zoom={12}
-              style={{height:"50%", width:"43%"}}
+              style={{height:"100%", width:"43%"}}
               initialCenter={{
                 lat: 37.7749,
                 lng: -122.4194
@@ -95,22 +92,9 @@ function Home(props) {
               <Marker
                 title={'Alemany Garden'}
                 name={'Alemany Garden'}
-                position={{lat: 37.73250889664049, lng: -122.41954819865589}} 
-                onClick={()=>{
-                  <InfoWindow
-                    position={{
-                      lat: 37.73250889664049, lng: -122.41954819865589
-                    }}
-                    onCloseClick={()=>{
-
-                    }}
-                  >
-                    <div>
-                      <h1>Alemany</h1>
-                    </div>
-                  </InfoWindow>
-                }}
+                position={{lat: 37.73250889664049, lng: -122.41954819865589}}
                 />
+                <h1>hello</h1>
               <Marker
                 title={'Geneva Community Garden'}
                 name={'Geneva Community Garden'}
