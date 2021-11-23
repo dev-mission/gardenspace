@@ -1,4 +1,4 @@
-import {useEffect} from 'react';
+import {useEffect, useState} from 'react';
 import {useHistory, Link} from 'react-router-dom';
 import Api from './Api';
 import {useAuthContext} from './AuthContext';
@@ -85,17 +85,41 @@ function Home(props) {
           <div className="container">
 	          <Map
               google={props.google}
-              zoom={14}
+              zoom={12}
               style={{height:"50%", width:"43%"}}
               initialCenter={{
-                lat: 40.854885,
-                lng: -88.081807
+                lat: 37.7749,
+                lng: -122.4194
               }}
             >
               <Marker
-                title={'The marker`s title will appear as a tooltip.'}
-                name={'SOMA'}
-                position={{lat: 37.778519, lng: -122.405640}} />
+                title={'Alemany Garden'}
+                name={'Alemany Garden'}
+                position={{lat: 37.73250889664049, lng: -122.41954819865589}} 
+                onClick={()=>{
+                  <InfoWindow
+                    position={{
+                      lat: 37.73250889664049, lng: -122.41954819865589
+                    }}
+                    onCloseClick={()=>{
+
+                    }}
+                  >
+                    <div>
+                      <h1>Alemany</h1>
+                    </div>
+                  </InfoWindow>
+                }}
+                />
+              <Marker
+                title={'Geneva Community Garden'}
+                name={'Geneva Community Garden'}
+                position={{lat: 37.72056395129933, lng: -122.4454946465868}} />
+              <Marker
+                title={'Portrero Hill Community Garden'}
+                name={'Portrero Hill Community Garden'}
+                position={{lat: 37.75992452843252, lng: -122.40530576008074}} />
+
             </Map>
           </div>    
  	      </div>
@@ -152,5 +176,5 @@ function Home(props) {
 }
 
 export default GoogleApiWrapper({
-  apiKey: process.env.REACT_APP_SECRET_KEY
+  apiKey: "AIzaSyAxUBe7Q5lgu0pwqG0NQeyhiusJ3gV3r5A"
 })(Home)
